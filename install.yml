@@ -1,0 +1,18 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: "Check if netttols is installed"
+      command: dpkg-query -l "{{ item }}"
+      register: package_exists
+      ignore_errors: yes
+      with_items:
+        net-tools
+
+
+    - name: install net-tools
+      apt:
+       name: "{{ item }}"
+
+      with_items:
+        net-tools

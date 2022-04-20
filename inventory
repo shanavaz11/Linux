@@ -1,0 +1,6 @@
+[ubuntu]
+192.168.152.154
+
+[ubuntu:vars]
+ansible_ssh_user=provision
+#ansible_ssh_password='$6$JIwI6K2VL/geTkLi$lKp2SVQ9gbUXe5UrBy3MaTsoveqMY2v39jRfDYGGV5vH5otLSJb2UtP.0qPwN83etDiCw8Lyz60b0LTN9A4Q60'
